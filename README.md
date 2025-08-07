@@ -73,22 +73,20 @@ Ensure you have the following installed:
    # Basic
    NODE_ENV=development
    DATABASE_URL=mongodb://127.0.0.1:27017/project_name
-   IP_ADDRESS=192.0.0.0
+   IP_ADDRESS=10.10.7.101
    PORT=5000
-
-   # Bcrypt
+   #Bcrypt
    BCRYPT_SALT_ROUNDS=12
-
-   # JWT
+   #JWT
    JWT_SECRET=jwt_secret
-   JWT_EXPIRE_IN=1d
-
-   # Email
+   #Email
    EMAIL_FROM=email@gmail.com
    EMAIL_USER=email@gmail.com
    EMAIL_PASS=mkqcfjeqloothyax
    EMAIL_PORT=587
    EMAIL_HOST=smtp.gmail.com
+   SUPER_ADMIN_EMAIL=admin@gmail.com
+   SUPER_ADMIN_PASSWORD=12345678
    ```
 
 4. **Run the project:**
@@ -112,4 +110,5 @@ Explain how to run the automated tests for this system.
 ```bash
 npm test
 ```
+
 # TS-Template
