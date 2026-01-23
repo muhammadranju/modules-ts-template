@@ -11,6 +11,10 @@ type IData<T> = {
     total: number;
   };
   data?: T;
+  errorMessages?: {
+    path: string;
+    message: string;
+  }[];
 };
 
 const sendResponse = <T>(res: Response, data: IData<T>) => {
