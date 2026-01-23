@@ -83,7 +83,7 @@ userSchema.statics.isMatchPassword = async (
 };
 
 //check user
-userSchema.pre('save', async function (next) {
+userSchema.pre('save', async function (next: any) {
   //check user
   const isExist = await User.findOne({ email: this.email });
   if (isExist) {
